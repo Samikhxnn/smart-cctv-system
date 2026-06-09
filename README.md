@@ -38,6 +38,11 @@ Smart CCTV System is an AI-powered surveillance solution built using Python, Ope
 * Sends automatic Telegram notifications when critical events are detected.
 * Enables remote monitoring and rapid response.
 
+## Screenshots
+*fire detection and telegram alert
+
+
+
 ## Technologies Used
 
 * Python
