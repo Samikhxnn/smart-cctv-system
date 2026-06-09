@@ -76,7 +76,7 @@ python main.py
 
 ## Demo
 
-A demonstration video of the Smart CCTV System is included in this repository.
+A demonstration video showing Fire Detection and Telegram Alerts is included in this repository as fire_detection_telegram_alert.mp4.
 
 ## Screenshots
 
