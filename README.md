@@ -124,10 +124,9 @@ cd smart-cctv-analytics
 ```
 ---
 
-
+```text
 # Folder Structure
 
-text```
 smart-cctv-analytics/
 │
 ├── main.py
