@@ -124,8 +124,8 @@ cd smart-cctv-analytics
 ```
 ---
 
+# Folder Structure 
 ```text
-# Folder Structure
 
 smart-cctv-analytics/
 │
