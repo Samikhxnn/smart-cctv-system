@@ -84,18 +84,22 @@ The system can:
 
 ```text
 Video Stream (main loop)
-       ↓
+       │
+       ▼
 Object Detection
-       ↓
+       │
+       ▼
 Person Tracking
-       ↓
+       │
+       ▼
 People Counting
-       ↓
-├── Crowd Monitoring
-├── Fire Detection
-└── Intrusion Detection
-       ↓
-Telegram Alert System ```
+       │
+       ├── Crowd Monitoring
+       ├── Fire Detection
+       └── Intrusion Detection
+       │
+       ▼
+Telegram Alert System
 
 ---
 
@@ -149,7 +153,7 @@ smart-cctv-analytics/
 │   └── telegram.py
 │
 ├── models/
-│   └── best.pt
+│   
 │
 ├── screenshots/
 │   ├── crowd_alert.png
