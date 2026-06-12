@@ -1,119 +1,203 @@
-# smart-cctv-system
-AI-powered Smart CCTV system using YOLO, OpenCV, and Python for fire/smoke detection, person tracking, crowd monitoring, PPE compliance, and Telegram alerts.
-# Smart CCTV System
+# Smart CCTV Analytics System
 
-## Overview
+A real-time Computer Vision based CCTV surveillance system that monitors video streams and automatically detects safety and security events.
 
-Smart CCTV System is an AI-powered surveillance solution built using Python, OpenCV, and YOLO. The system performs real-time video analysis for security and safety monitoring by tracking people, counting occupants, detecting crowds, identifying fire and smoke, monitoring PPE compliance, and sending Telegram alerts.
+The system can:
 
-## Features
+- Track people in real time
+- Count the number of people present
+- Generate crowd density alerts
+- Detect fire incidents
+- Detect intrusion inside restricted zones
+- Send instant Telegram notifications
 
-### Person Tracking
+---
 
-* Tracks individuals across video frames in real time.
-* Assigns unique IDs to detected people for continuous monitoring.
+# Features
 
-### People Counting
+## Person Tracking
+- Real-time person detection and tracking
+- Assigns IDs to tracked individuals
+- Maintains tracking across video frames
 
-* Counts the number of people present in the camera view.
-* Useful for occupancy monitoring and analytics.
+## People Counting
+- Counts the number of detected people
+- Displays live count on screen
+- Useful for occupancy monitoring
 
-### Crowd Monitoring
+## Crowd Density Alert
+- Monitors crowd size continuously
+- Triggers alert when crowd threshold is exceeded
+- Suitable for public places and industrial environments
 
-* Monitors crowd density in real time.
-* Helps identify overcrowded areas.
+## Fire Detection
+- Detects fire from CCTV footage
+- Generates warning alerts
+- Helps improve emergency response time
 
-### Fire and Smoke Detection
+## Restricted Zone Intrusion Detection
+- Monitors predefined restricted areas
+- Detects unauthorized entry
+- Generates intrusion alerts
 
-* Detects fire and smoke in video streams.
-* Provides early warning of potential hazards.
+## Telegram Notifications
+- Sends real-time alerts directly to Telegram
+- Fire Alert
+- Crowd Alert
+- Intrusion Alert
 
-### PPE Detection
+---
 
-* Detects safety helmets and safety vests.
-* Helps monitor workplace safety compliance.
+# Demo
 
-### Telegram Alert System
+## Crowd Alert
 
-* Sends automatic Telegram notifications when critical events are detected.
-* Enables remote monitoring and rapid response.
+![Crowd Alert Demo](demo/crowd_gif.gif)
 
-## Screenshots
-*fire detection and telegram alert
-![Fire Detection & Telegram Alert](fire_detection_telegram.png)
+## Fire Detection
 
+![Fire Detection Demo](demo/fire_gif.gif)
 
-## Technologies Used
+## Intrusion Detection
 
-* Python
-* OpenCV
-* Ultralytics YOLO
-* NumPy
-* Telegram Bot API
+![Intrusion Detection Demo](demo/intrusion_gif.gif)
 
-## Project Structure
+---
 
-smart-cctv-ai/
+# Screenshots
 
-├── models/
+## Crowd Alert
 
-├── modules/
+![Crowd Alert](screenshots/crowd_ss.png)
 
-├── main.py
+## Fire Detection
 
-├── requirements.txt
+![Fire Detection](screenshots/fire_ss.png)
 
-└── README.md
+## Intrusion Detection
 
-## Installation
+![Intrusion Detection](screenshots/intrusion_ss.png)
 
-1. Clone the repository
+---
 
-git clone YOUR_REPOSITORY_URL
+# Project Architecture
 
-2. Install dependencies
+Video Stream(main loop)
+↓
+Object Detection
+↓
+Person Tracking
+↓
+People Counting
+↓
+├── Crowd Monitoring
+├── Fire Detection
+└── Intrusion Detection
+↓
+Telegram Alert System
 
+---
+
+# Technologies Used
+
+- Python
+- OpenCV
+- YOLO
+- NumPy
+- Telegram Bot API
+
+----------------------------------
+
+# Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/smart-cctv-analytics.git
+cd smart-cctv-analytics
+```
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-3. Run the project
+## Run Project
 
+```bash
 python main.py
+```
 
-## Demo
+---
 
-A demonstration video showing Fire Detection and Telegram Alerts is included in this repository as fire_detection_telegram_alert.mp4.
+# Folder Structure
 
-## Screenshots
+```text
+smart-cctv-analytics/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+│
+├── modules/
+│   ├── fire_and_detection.py
+│   ├── crowd_monitoring.py
+│   ├── intrusion_detection.py
+│   ├── tracking.py
+│   └── telegram.py
+│
+├── models/
+│   └── best.pt
+│
+├── screenshots/
+│   ├── crowd_alert.png
+│   ├── fire_detection.png
+│   └── intrusion_detection.png
+│
+├── demo/
+│   ├── crowd.gif
+│   ├── fire.gif
+│   └── intrusion.gif
+│
+└── outputs/
+```
 
-Screenshots will be added soon.
+---
 
-## Applications
+# Alert Types
 
-* Industrial Safety Monitoring
-* Construction Site Monitoring
-* Factory Surveillance
-* Smart Security Systems
-* Crowd Management
-* Public Area Monitoring
+| Alert Type | Description |
+|------------|-------------|
+| Crowd Alert | Triggered when people count exceeds threshold(9 people) |
+| Fire and smoke Alert | Triggered when fire/smoke is detected |
+| Intrusion Alert | Triggered when a person enters restricted area |
 
-## Future Improvements
+---
 
-* Intrusion Detection
-* Loitering Detection
-* Multi-Camera Support
-* Web Dashboard
-* Face Recognition Integration
+# Applications
 
-## Learning Outcomes
+- Smart City Surveillance
+- Factory Monitoring
+- Construction Site Safety
+- Office Security
+- Warehouse Monitoring
+- Restricted Area Protection
 
-* Computer Vision
-* Deep Learning
-* YOLO Object Detection
-* Object Tracking
-* Real-Time Video Analytics
-* Alert Automation
-* System Integration
+---
 
-## Author
+# Future Improvements
 
-Sabi Khan
+- PPE Detection
+- Vehicle Detection
+- Multi-Camera Monitoring
+- Dashboard Analytics
+- Email Alerts
+
+---
+
+# Author
+
+Sami Khan
+
+
