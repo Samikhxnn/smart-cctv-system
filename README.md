@@ -129,7 +129,6 @@ cd smart-cctv-analytics
 
 ```bash
 pip install -r requirements.txt
----
 ```
 
 ---
