@@ -150,8 +150,9 @@ smart-cctv-analytics/
 ├── demo/
 │   ├── crowd.gif
 │   ├── fire.gif
-│   └── intrusion.gif
-```
+│   └── intrusion.gif 
+
+ ```
 
 ---
 
