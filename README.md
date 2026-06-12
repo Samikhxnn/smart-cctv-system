@@ -113,26 +113,12 @@ Telegram Alert System
 
 ----------------------------------
 
-# Installation
+## Installation
 
-## Clone Repository
-
+### Clone Repository
 ```bash
-git clone https://github.com/Samikhxnn/smart-cctv-analytics.git
+git clone [https://github.com/Samikhxnn/smart-cctv-analytics.git](https://github.com/Samikhxnn/smart-cctv-analytics.git)
 cd smart-cctv-analytics
-```
-
-## Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run Project
-
-```bash
-python main.py
-```
 
 ---
 
