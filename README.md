@@ -126,7 +126,7 @@ cd smart-cctv-analytics
 
 # Folder Structure
 
-```text
+```
 smart-cctv-analytics/
 │
 ├── main.py
@@ -152,8 +152,7 @@ smart-cctv-analytics/
 │   ├── crowd.gif
 │   ├── fire.gif
 │   └── intrusion.gif 
-
- ```
+```
 
 ---
 
